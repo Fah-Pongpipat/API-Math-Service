@@ -12,10 +12,10 @@ export class AppController {
 
   @Post('sum1')
   async sum1(@Body('numbers') numbers: number[]) {
-    this.appService.sum1(numbers);
+    return this.appService.sum1(numbers);
   }
   @Post('sum2')
   async sum2(@Body('numbers') numbers: number[]) {
-    this.appService.sum2(numbers);
+    return this.appService.sum2(numbers);
   }
 }
